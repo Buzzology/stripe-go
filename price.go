@@ -418,7 +418,7 @@ type Price struct {
 	// String representing the object's type. Objects of the same type share the same value.
 	Object string `json:"object"`
 	// The ID of the product this price is associated with.
-	Product *Product `json:"product"`
+	Product string `json:"product"`
 	// The recurring components of a price such as `interval` and `usage_type`.
 	Recurring *PriceRecurring `json:"recurring"`
 	// Specifies whether the price is considered inclusive of taxes or exclusive of taxes. One of `inclusive`, `exclusive`, or `unspecified`. Once specified as either `inclusive` or `exclusive`, it cannot be changed.
